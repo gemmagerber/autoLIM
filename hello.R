@@ -11,15 +11,12 @@
 
 #https://r-pkgs.org/whole-game.html
 library(devtools)
+packageVersion("devtools")
 
-#use_mit_license() # pick a licence
+use_mit_license() # pick a licence
 use_git()
 
 # start adding functions
-use_r("multi")
-use_r("prepack")
-use_r("fmat")
-use_r("input")
 
 ## autoLIMR Gemma's version begin package building
 # error_print
@@ -33,9 +30,7 @@ check()
 
 # Edit decription (Ctrl + .) and start typing "Description"
 
-# Pick a licence
-use_mit_license()
-
-# Go to function. Insert roxugen skeleton. Trigger conversion of roxygen comment into
+# Go to function. Insert roxugen skeleton.
+# Trigger conversion of roxygen comment into
 # man/plotpack.Rd with document()
-devtools::document()
+devtools::document("error_print")
