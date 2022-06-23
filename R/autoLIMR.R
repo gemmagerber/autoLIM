@@ -123,26 +123,26 @@ autoLIMR <- function (net_data_input,
   meta_2 <- lapply(X = adj_matrix_sheets,
                    FUN = meta2)
 
-  # Execution: autoLIM::merge compartments, give name
-  comp.lim <- autoLIM::merge(comp.list, type = "Compartments")
+  # Execution: merge_sections compartments, give name
+  comp.lim <- merge_sections(comp.list, type = "Compartments")
 
-  # Execution: autoLIM::merge compartments, give name
-  externals.lim <- autoLIM::merge(externals.list, type = "Externals")
+  # Execution: merge_sections compartments, give name
+  externals.lim <- merge_sections(externals.list, type = "Externals")
 
-  # Execution: autoLIM::merge variable lists, name sections
-  var.lim <- autoLIM::merge(vars, type = "Variables")
+  # Execution: merge_sections variable lists, name sections
+  var.lim <- merge_sections(vars, type = "Variables")
 
-  # Execution: autoLIM::merge flow lists, add section headings
+  # Execution: merge_sections flow lists, add section headings
   flow.lim <-
-    autoLIM::merge(resp_flows, inex.flow.list, adj.mats.flow.list,
+    merge_sections(resp_flows, inex.flow.list, adj.mats.flow.list,
           type = "Flows")
-  # Execution: autoLIM::merge inequalities lists, add section headings
+  # Execution: merge_sections inequalities lists, add section headings
   ineq.lim <-
-    autoLIM::merge(net_data_ineq_list, adj_mat_ineq_list, type = "Inequalities")
+    merge_sections(net_data_ineq_list, adj_mat_ineq_list, type = "Inequalities")
 
-  # Execution: autoLIM::merge all sections into full lim files
+  # Execution: merge_sections all sections into full lim files
   Weighted <-
-    autoLIM::merge(meta_w,
+    merge_sections(meta_w,
           meta_2,
           comp.lim,
           externals.lim,
@@ -151,7 +151,7 @@ autoLIMR <- function (net_data_input,
           ineq.lim,
           type = NULL)
   Unweighted <-
-    autoLIM::merge(meta_uw,
+    merge_sections(meta_uw,
           meta_2,
           comp.lim,
           externals.lim,

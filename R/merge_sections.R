@@ -1,12 +1,12 @@
 # Function:
-#' Merge
+#' merge_sections
 #' Merge lists together, name sections
 #' @param type type of section
 #' @param ... other arguments
 #'
 #' @export
 #' @importFrom stats setNames
-merge <- function(type = NULL, ...) {
+merge_sections <- function(type = NULL, ...) {
   l <- list(...)
   keys <- unique(unlist(lapply(l, names)))
   x <-
