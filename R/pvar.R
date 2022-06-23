@@ -1,8 +1,7 @@
 #' Production variable definition
 #' Defines production variable based on many arguments
-#' @param x network data input matrix
-#' @param respiration If respiration = TRUE in main autoLIMR argument
-#' @param NLNode the defined NLNodes from the main autoLIMR argument
+#' @inheritParams pvar_wo_ex
+#' @inheritParams pvar_w_ex
 #'
 #' @export
 #'

@@ -1,6 +1,7 @@
 #' Unused material/energy variable definition
 #'
-#' @param x matrices
+#' @inheritParams uvar_wo_ex
+#' @inheritParams uvar_w_ex
 #'
 #' @export
 #'

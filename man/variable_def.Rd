@@ -8,7 +8,7 @@ Defines whole variables sections from various other functions}
 variable_def(x, NLNode, primary_producer, respiration)
 }
 \arguments{
-\item{x}{network data input matrix}
+\item{x}{network input data matrix}
 
 \item{NLNode}{the defined NLNodes from the main autoLIMR argument}
 

@@ -1,11 +1,11 @@
 ## FUNCTION:
 #' Variables Definition
 #' Defines whole variables sections from various other functions
-#' @param x network data input matrix
-#' @param NLNode the defined NLNodes from the main autoLIMR argument
-#' @param primary_producer Primary producers defined in main autoLIMR function
-#' @param respiration If respiration = TRUE in main autoLIMR argument
-#'
+#' @inheritParams qvar
+#' @inheritParams pvar
+#' @inheritParams uvar
+#' @inheritParams aevar
+#' @inheritParams pp_true
 #' @export
 #'
 variable_def <-

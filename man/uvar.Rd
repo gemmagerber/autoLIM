@@ -7,7 +7,7 @@
 uvar(x)
 }
 \arguments{
-\item{x}{matrices}
+\item{x}{matrices defined from Network Data Input workbook}
 }
 \description{
 Unused material/energy variable definition

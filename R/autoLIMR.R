@@ -1,17 +1,35 @@
-#' autoLIMR
-#' Automatically defines LIM weighted and unweighted declaration files from two input workbooks
-#' @param net_data_input the user-defined workbook with network input data
-#' @param adj_mat_input the user-defined workbook with adjacency matrices
+#' autoLIMR Automatically defines LIM weighted and unweighted declaration files
+#' from two input workbooks
+#' @inheritParams error_print
+#' @inheritParams read_all_sheets
+#' @inheritParams net_data_tidy
+#' @inheritParams adj_mat_tidy
+
 #' @param NLNode the defined NLNodes from the main autoLIMR argument
 #' @param respiration If respiration = TRUE in main autoLIMR argument
-#' @param respiration_element if Respiration = TRUE, the respiration element to be defined. Default to "CO2"
+#' @param respiration_element if Respiration = TRUE, the respiration element to
+#'   be defined. Default to "CO2"
 #' @param primary_producer Primary producers defined in main autoLIMR function
-#' @param author author name. Defined in the main autoLIMR function. Defaults to system user
-#' @param date date. Defined in the main autoLIMR function. Defaults to system date
-#' @param weighted whether to return weighted LIM declaration files. Default to TRUE
-#'
+#' @param author author name. Defined in the main autoLIMR function. Defaults to
+#'   system user
+#' @param date date. Defined in the main autoLIMR function. Defaults to system
+#'   date
+#' @param weighted whether to return weighted LIM declaration files. Default to
+#'   TRUE
+#' @return Two folders containing weighted, and unweighted network LIM
+#'   declaration files respectively. For use with R package LIM
 #' @export
-#'
+#' @examples \dontrun{autoLIMR(net_data_input = "your_network_data_workbook.xlsx",
+#' adj_mat_input = "your_adjacency_matrix_data_workbook.xlsx",
+#' NLNode = NULL,
+#' respiration = NULL,
+#' respiration_element = "CO2",
+#' primary_producer = NULL,
+#' author = "<your name>",
+#' date = "<the date>",
+#' weighted = TRUE)}
+
+
 autoLIMR <- function (net_data_input,
                       adj_mat_input,
                       NLNode = NULL,

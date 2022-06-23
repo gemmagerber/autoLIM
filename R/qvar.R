@@ -5,9 +5,9 @@
 #' @export
 #'
 qvar <- function(x) {
-  inmat <- x[, grep("Import", colnames(x)), drop = T]
+  inmat <- x[, grep("Import", colnames(x)), drop = TRUE]
   in.mat <-
-    inmat[grep("NLNode", rownames(inmat), invert = T), , drop = F]
+    inmat[grep("NLNode", rownames(inmat), invert = TRUE), , drop = FALSE]
   wo.in <-
     names(which(rowSums(is.na(in.mat)) == ncol(in.mat)))
   w.in <- names(which(rowSums(is.na(in.mat)) != ncol(in.mat)))

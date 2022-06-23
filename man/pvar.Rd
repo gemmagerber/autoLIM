@@ -8,7 +8,7 @@ Defines production variable based on many arguments}
 pvar(x, respiration, NLNode)
 }
 \arguments{
-\item{x}{network data input matrix}
+\item{x}{matrices defined from Network Data Input workbook}
 
 \item{respiration}{If respiration = TRUE in main autoLIMR argument}
 

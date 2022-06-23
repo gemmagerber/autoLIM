@@ -2,8 +2,8 @@
 % Please edit documentation in R/autoLIMR.R
 \name{autoLIMR}
 \alias{autoLIMR}
-\title{autoLIMR
-Automatically defines LIM weighted and unweighted declaration files from two input workbooks}
+\title{autoLIMR Automatically defines LIM weighted and unweighted declaration files
+from two input workbooks}
 \usage{
 autoLIMR(
   net_data_input,
@@ -26,17 +26,36 @@ autoLIMR(
 
 \item{respiration}{If respiration = TRUE in main autoLIMR argument}
 
-\item{respiration_element}{if Respiration = TRUE, the respiration element to be defined. Default to "CO2"}
+\item{respiration_element}{if Respiration = TRUE, the respiration element to
+be defined. Default to "CO2"}
 
 \item{primary_producer}{Primary producers defined in main autoLIMR function}
 
-\item{author}{author name. Defined in the main autoLIMR function. Defaults to system user}
+\item{author}{author name. Defined in the main autoLIMR function. Defaults to
+system user}
 
-\item{date}{date. Defined in the main autoLIMR function. Defaults to system date}
+\item{date}{date. Defined in the main autoLIMR function. Defaults to system
+date}
 
-\item{weighted}{whether to return weighted LIM declaration files. Default to TRUE}
+\item{weighted}{whether to return weighted LIM declaration files. Default to
+TRUE}
+}
+\value{
+Two folders containing weighted, and unweighted network LIM
+declaration files respectively. For use with R package LIM
 }
 \description{
-autoLIMR
-Automatically defines LIM weighted and unweighted declaration files from two input workbooks
+autoLIMR Automatically defines LIM weighted and unweighted declaration files
+from two input workbooks
+}
+\examples{
+\dontrun{autoLIMR(net_data_input = "your_network_data_workbook.xlsx",
+adj_mat_input = "your_adjacency_matrix_data_workbook.xlsx",
+NLNode = NULL,
+respiration = NULL,
+respiration_element = "CO2",
+primary_producer = NULL,
+author = "<your name>",
+date = "<the date>",
+weighted = TRUE)}
 }
