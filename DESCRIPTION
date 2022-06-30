@@ -14,3 +14,5 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+URL: https://github.com/gemmagerber/autoLIM
+BugReports: https://github.com/gemmagerber/autoLIM/issues
