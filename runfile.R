@@ -63,13 +63,15 @@ use_r("meta1")
 use_r("meta2")
 use_r("merge")
 use_r("autoLIMR")
+use_r("fetch_autolimexcel")
+# use_test("fetch_autolimexcel")
 
 # then add function and save
 check()
 devtools::document()
 check()
 
-?autoLIMR
+
 # call "load_all" to make available for experimentation
 load_all()
 exists("error_print", where = globalenv(), inherits = FALSE)
@@ -102,6 +104,7 @@ exists("meta1", where = globalenv(), inherits = FALSE)
 exists("meta2", where = globalenv(), inherits = FALSE)
 exists("merge", where = globalenv(), inherits = FALSE)
 exists("autoLIMR", where = globalenv(), inherits = FALSE)
+exists("fetch_autolimexcel", where = globalenv(), inherits = FALSE)
 # Go to function. Insert roxugen skeleton.
 # Trigger conversion of roxygen comment into
 # man/plotpack.Rd with document()
