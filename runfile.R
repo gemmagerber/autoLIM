@@ -64,7 +64,7 @@ use_r("meta2")
 use_r("merge")
 use_r("autoLIMR")
 use_r("fetch_autolimexcel")
-# use_test("fetch_autolimexcel")
+use_test("fetch_autolimexcel")
 
 # then add function and save
 check()
@@ -108,11 +108,19 @@ exists("fetch_autolimexcel", where = globalenv(), inherits = FALSE)
 # Go to function. Insert roxugen skeleton.
 # Trigger conversion of roxygen comment into
 # man/plotpack.Rd with document()
-devtools::document()
+
 check()
+devtools::document()
+
 use_git()
-use_github()
+#use_github()
 install()
 Sys.getenv("R_LIBS_USER")
 #install.packages("pacman")
 #library(pacman)
+
+## Testing
+
+# Testing: near completion of a new feature of bug fix
+# Run the entire test suite
+devtools::test()
