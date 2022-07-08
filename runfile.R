@@ -193,7 +193,10 @@ gitcreds::gitcreds_delete()
 
 
 usethis::create_github_token()
-gitcreds::gitcreds_set()
+?gitcreds::gitcreds_set()
 usethis::use_git()
-usethis::use_github()
 
+
+# Deleted github repository
+usethis::use_git()
+usethis::use_github() # create new github repostiroy
