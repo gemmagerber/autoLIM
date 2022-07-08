@@ -21,6 +21,8 @@ multinets <-
 
     # Starting point choices. Choice 1: Default
     if (is.null(x0)) {
+
+
       solved.networks <-
         defaultx0(
           full_limfile = full_limfile,
