@@ -88,6 +88,9 @@ use_r("ssCheck")
 check()
 devtools::document()
 check()
+use_git()
+use_github()
+
 # # ? "%v%"
 # ?network:::get.vertex.attribute
 # # ?network.extraction
@@ -148,7 +151,7 @@ exists("autoLIMR", where = globalenv(), inherits = FALSE)
 exists("fetch_autolimexcel", where = globalenv(), inherits = FALSE)
 exists("check_build", where = globalenv(), inherits = FALSE)
 
-# Go to function. Insert roxugen skeleton.
+# Go to function. Insert roxygen skeleton.
 # Trigger conversion of roxygen comment into
 # man/plotpack.Rd with document()
 # fetch_autolimexcel()

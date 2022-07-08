@@ -19,6 +19,9 @@ multinets(file = NULL, iter = NULL, jmp = NULL, x0 = NULL, pack = FALSE, ...)
 
 \item{...}{Further LIM::Xsample arguments}
 }
+\value{
+Multiple plauisble networks
+}
 \description{
 MPN with multi.nets function
 }

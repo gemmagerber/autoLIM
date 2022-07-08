@@ -6,10 +6,9 @@
 #' @inheritParams as_extended
 #' @param pack Logical argument to pack the networks for analysis with package enaR
 #'
-#' @return
+#' @return Multiple plauisble networks
 #' @export
 
-#' @examples
 multinets <-
   function(file = NULL,
            iter = NULL,

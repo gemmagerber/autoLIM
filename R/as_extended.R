@@ -1,9 +1,9 @@
-#' Title
-#'
+#' as_extended()
+#' Shamelessly from package enaR
 #' @param x the something to be defined
 #' @param zero.na Change NA's to zero's
 #'
-#' @return
+#' @return Extended flow matrices
 
 #' @importFrom network get.vertex.attribute
 #'

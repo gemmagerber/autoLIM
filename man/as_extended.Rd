@@ -2,7 +2,8 @@
 % Please edit documentation in R/as_extended.R
 \name{as_extended}
 \alias{as_extended}
-\title{Title}
+\title{as_extended()
+Shamelessly from package enaR}
 \usage{
 as_extended(x, zero.na = TRUE)
 }
@@ -11,6 +12,10 @@ as_extended(x, zero.na = TRUE)
 
 \item{zero.na}{Change NA's to zero's}
 }
+\value{
+Extended flow matrices
+}
 \description{
-Title
+as_extended()
+Shamelessly from package enaR
 }
