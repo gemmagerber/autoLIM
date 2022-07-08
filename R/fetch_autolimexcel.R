@@ -11,6 +11,4 @@ fetch_autolimexcel <- function() {
   download.file(url = url_autolimexcel, destfile = filename)
   message("Success! The latest version of autoLIMExcel has been downloaded and saved in the working directory")
 
-
-
 }
