@@ -89,6 +89,7 @@ check()
 devtools::document()
 check()
 use_git()
+usethis::use_git_remote("origin", url = NULL, overwrite = TRUE)
 use_github()
 
 # # ? "%v%"
