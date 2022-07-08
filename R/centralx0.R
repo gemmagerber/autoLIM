@@ -19,6 +19,8 @@ centralx0 <-
             jmp = NULL,
             x0 = "central",
             ...) {
+
+
     x0 <- LIM::Xranges(full_limfile, central = TRUE, ispos = TRUE)[, "central"]
     starting.solution.x0 <- x0
     message("Checking that the central solution is valid...\n")
