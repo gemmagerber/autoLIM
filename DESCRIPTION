@@ -1,15 +1,15 @@
 Package: autoLIM
-Title: What the Package Does (One Line, Title Case)
+Title: Solve Multiple Plausible Networks using Linear Inverse Modelling
 Version: 0.0.0.9000
 Authors@R: 
     person("Gemma", "Gerber", , "gemmagerber@live.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-8722-3113"))
-Description: What the package does (one paragraph).
+Description: A full suite of methods designed to construct, calculate, and assess multiple plausible networks.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.0
-Imports: readxl(>= 1.3.1), stats(>= 4.0.3)
+Imports: readxl(>= 1.3.1), stats(>= 4.0.3), LIM(>= 1.4.3), network(>= 1.17.1)
 Suggests: 
     knitr,
     rmarkdown,

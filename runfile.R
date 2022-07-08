@@ -8,6 +8,10 @@
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
 
+version
+library(LIM)
+library(network)
+
 create_package("D:/Desktop/autoLIM")
 #https://r-pkgs.org/whole-game.html
 
@@ -66,10 +70,47 @@ use_r("autoLIMR")
 use_r("fetch_autolimexcel")
 use_test("fetch_autolimexcel")
 
+# for multinets
+use_r("check_build")
+use_r("defaultx0")
+use_r("centralx0")
+use_r("fmat_fun")
+use_r("input_fun")
+use_r("resp_fun")
+use_r("export_fun")
+use_r("output_fun")
+use_r("living_fun")
+use_r("prepack_fun")
+use_r("as_extended")
+use_r("ssCheck")
+
 # then add function and save
 check()
 devtools::document()
 check()
+# # ? "%v%"
+# ?network:::get.vertex.attribute
+# # ?network.extraction
+# # library(network)
+# ?network:::network.extraction()
+# getMethod("network::network.extraction")
+# ?network
+# download.packages(pkgs = "network",
+#                   destdir = ".",
+#                   type = "source")
+#
+# untar(download.packages(pkgs = "network",
+#                         destdir = ".",
+#                         type = "source")[,2])
+
+download.packages(pkgs = "enaR",
+                  destdir = ".",
+                  type = "source")
+?download.packages
+
+untar(download.packages(pkgs = "network",
+                        destdir = ".",
+                        type = "source")[,2])
 
 
 # call "load_all" to make available for experimentation
@@ -105,9 +146,12 @@ exists("meta2", where = globalenv(), inherits = FALSE)
 exists("merge", where = globalenv(), inherits = FALSE)
 exists("autoLIMR", where = globalenv(), inherits = FALSE)
 exists("fetch_autolimexcel", where = globalenv(), inherits = FALSE)
+exists("check_build", where = globalenv(), inherits = FALSE)
+
 # Go to function. Insert roxugen skeleton.
 # Trigger conversion of roxygen comment into
 # man/plotpack.Rd with document()
+# fetch_autolimexcel()
 
 check()
 devtools::document()
@@ -124,3 +168,6 @@ Sys.getenv("R_LIBS_USER")
 # Testing: near completion of a new feature of bug fix
 # Run the entire test suite
 devtools::test()
+
+# As part of CMD check
+devtools::check()

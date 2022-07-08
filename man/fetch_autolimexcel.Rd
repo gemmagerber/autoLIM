@@ -8,7 +8,7 @@ Downloads the latest version of autoLIM-Excel from GitHub}
 fetch_autolimexcel()
 }
 \value{
-A .xlsx file
+autoLIM-Excel as .xlsx file in working directory
 }
 \description{
 Function fetch_autolimexcel
