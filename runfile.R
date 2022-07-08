@@ -176,3 +176,22 @@ devtools::test()
 
 # As part of CMD check
 devtools::check()
+
+
+## GitHub things
+
+
+gitcreds::gitcreds_get()
+
+install.packages("credentials")
+library(credentials)
+
+gitcreds::gitcreds_get(url = "https://github.com", use_cache = TRUE, set_cache = TRUE)
+gitcreds::gitcreds_set()
+gitcreds::gitcreds_delete()
+gitcreds::gitcreds_delete()
+
+
+usethis::create_github_token()
+gitcreds::gitcreds_set()
+usethis::use_github()
