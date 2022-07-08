@@ -91,6 +91,7 @@ check()
 use_git()
 usethis::use_git_remote("origin", url = NULL, overwrite = TRUE)
 use_github()
+# testing
 
 # # ? "%v%"
 # ?network:::get.vertex.attribute
