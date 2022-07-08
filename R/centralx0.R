@@ -19,6 +19,12 @@ centralx0 <-
             jmp = NULL,
             x0 = "central",
             ...) {
+    if (!requireNamespace("LIM", quietly = TRUE)) {
+      stop(
+        "Package \"LIM\" must be installed to use this function.",
+        call. = FALSE
+      )
+    }
 
 
     x0 <- LIM::Xranges(full_limfile, central = TRUE, ispos = TRUE)[, "central"]

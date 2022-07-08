@@ -18,6 +18,12 @@ defaultx0 <-
             jmp = NULL,
             x0 = NULL,
             ...) {
+    if (!requireNamespace("LIM", quietly = TRUE)) {
+      stop(
+        "Package \"LIM\" must be installed to use this function.",
+        call. = FALSE
+      )
+    }
     message(
       "Initial solution (x0) calculated using default LSEI algorithm (Haskell and Hanson 1981).
     Solving multiple plausible networks (this may take a while)...\n"

@@ -28,6 +28,19 @@ library(rmarkdown)
 # Vignettes
 usethis::use_vignette("autolim_vignette")
 
+# Package description
+usethis::use_tidy_description()
+
+usethis::use_package("readxl", "Imports") # Dependencies
+usethis::use_package("LIM", "Imports") # Dependencies
+usethis::use_package("limSolve", "Imports") # Dependencies
+usethis::use_package("network", "Imports") # Dependencies
+usethis::use_package("stats", "Imports") # Dependencies
+
+usethis::use_package("knitr", "Suggests") # Dependencies
+usethis::use_package("rmarkdown", "Suggests") # Dependencies
+usethis::use_package("testthat", "Suggests") # Dependencies
+
 use_mit_license() # pick a licence
 use_git()
 use_github()
@@ -200,3 +213,4 @@ usethis::use_git()
 # Deleted github repository
 usethis::use_git()
 usethis::use_github() # create new github repostiroy
+usethis::use_git_remote("origin", url = NULL, overwrite = TRUE)

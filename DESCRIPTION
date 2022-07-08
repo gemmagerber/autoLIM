@@ -4,17 +4,24 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Gemma", "Gerber", , "gemmagerber@live.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-8722-3113"))
-Description: A full suite of methods designed to construct, calculate, and assess multiple plausible networks.
+Description: A full suite of methods designed to construct, calculate, and
+    assess multiple plausible networks.
 License: MIT + file LICENSE
-Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.0
-Imports: readxl(>= 1.3.1), stats(>= 4.0.3), LIM(>= 1.4.3), network(>= 1.17.1)
+URL: https://github.com/gemmagerber/autoLIM
+BugReports: https://github.com/gemmagerber/autoLIM/issues
+Imports: 
+    LIM (>= 1.4.3),
+    limSolve,
+    network (>= 1.17.1),
+    readxl (>= 1.3.1),
+    stats (>= 4.0.3)
 Suggests: 
     knitr,
     rmarkdown,
     testthat (>= 3.0.0)
-VignetteBuilder: knitr
-URL: https://github.com/gemmagerber/autoLIM
-BugReports: https://github.com/gemmagerber/autoLIM/issues
+VignetteBuilder: 
+    knitr
 Config/testthat/edition: 3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.0
