@@ -7,12 +7,15 @@
 #   Install Package:           'Ctrl + Shift + B'
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
+#
+# version
+# library(LIM)
+# library(network)
 
-version
-library(LIM)
-library(network)
 
-create_package("D:/Desktop/autoLIM")
+#create_package("D:/Desktop/autoLIM")
+
+
 #https://r-pkgs.org/whole-game.html
 
 library(devtools)
@@ -23,7 +26,7 @@ library(usethis)
 library(rmarkdown)
 #library(readxl)
 
-# packageVersion("devtools")
+
 
 # Vignettes
 usethis::use_vignette("autolim_vignette")
@@ -33,13 +36,15 @@ usethis::use_tidy_description()
 
 usethis::use_package("readxl", "Imports") # Dependencies
 usethis::use_package("LIM", "Imports") # Dependencies
-usethis::use_package("limSolve", "Imports") # Dependencies
 usethis::use_package("network", "Imports") # Dependencies
 usethis::use_package("stats", "Imports") # Dependencies
 
 usethis::use_package("knitr", "Suggests") # Dependencies
 usethis::use_package("rmarkdown", "Suggests") # Dependencies
 usethis::use_package("testthat", "Suggests") # Dependencies
+
+packageVersion("knitr")
+packageVersion("rmarkdown")
 
 use_mit_license() # pick a licence
 use_git()
@@ -102,8 +107,7 @@ check()
 devtools::document()
 check()
 use_git()
-usethis::use_git_remote("origin", url = NULL, overwrite = TRUE)
-use_github()
+
 # testing
 
 # # ? "%v%"
